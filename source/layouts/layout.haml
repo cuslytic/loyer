@@ -1,0 +1,20 @@
+!!!
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:charset => "utf-8"}
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %link{:href => "http://cdn.jsdelivr.net/zurb/foundation-apps-1.2.0.css", :rel => "stylesheet"}/
+    %link{:href => "http://cdn.jsdelivr.net/zurb/foundation-apps-1.2.0.min.css", :rel => "stylesheet"}/
+    %script{:src => "http://cdn.jsdelivr.net/zurb/foundation-apps-1.2.0.js"}
+    %script{:src => "http://cdn.jsdelivr.net/zurb/foundation-apps-1.2.0.min.js"}
+    %script{:src => "http://cdn.jsdelivr.net/zurb/foundation-apps-templates-1.2.0.js"}
+    %script{:src => "http://cdn.jsdelivr.net/zurb/foundation-apps-templates-1.2.0.min.js"}
+
+    %title= data.page.title
+    = stylesheet_link_tag "style"
+    = javascript_include_tag "modernizr"
+  %body{:class => page_classes}
+    = yield
+    = javascript_include_tag  "all"

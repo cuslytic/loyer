@@ -1,0 +1,92 @@
+---
+title: Dashboard
+---
+
+.grid-frame
+  #sidebar.topbar.medium-grid-block.collapse.medium-2.large-2.vertical{:position => "left", "zf-panel" => ""}
+    .grid-content.collapse.shrink.hide-for-medium
+      %a.secondary.button.expand{:href => "", "zf-close" => ""} Close
+    .grid-content.collapse.shrink
+      %h3 Phoenix
+      -# %img{:src => "http://placehold.it/400x150&text=Logo"}/
+    .grid-content.sidebar
+      %section.sidebar__section
+        %ul.sidebar__list
+          %li.sidebar__listItem
+            %a.sidebar__listItemLink{:href => "#"}
+              Get Started
+              %span.block-list-label 7
+          %li.sidebar__listItem
+            %a.sidebar__listItemLink{:href => "#"}
+              Team
+              %span.block-list-label 2
+
+      %section.sidebar__section
+        %ul.sidebar__list
+          %li.sidebar__listItem.active
+            %a.sidebar__listItemLink{:href => "#"}
+              Dashboard
+              %span.block-list-label 2
+          %li.sidebar__listItem
+            %a.sidebar__listItemLink{:href => "#"}
+              Timesheets
+              %span.block-list-label 2
+          %li.sidebar__listItem
+            %a.sidebar__listItemLink{:href => "#"}
+              Matters
+              %span.block-list-label 2
+          %li.sidebar__listItem
+            %a.sidebar__listItemLink{:href => "#"}
+              Contact Management
+              %span.block-list-label 2
+          %li.sidebar__listItem
+            %a.sidebar__listItemLink{:href => "#"}
+              Precedent Library
+              %span.block-list-label 2
+          %li.sidebar__listItem
+            %a.sidebar__listItemLink{:href => "#"}
+              Client Billing
+              %span.block-list-label 2
+      %section.sidebar__section
+        %ul.sidebar__list
+          %li.sidebar__listItem
+            %a.sidebar__listItemLink{:href => "#"}
+              Settings
+              %span.block-list-label 2
+
+    .grid-content.collapse.shrink.avatar-section
+      %img{:src => "http://placehold.it/50x50"}/
+      Regina George
+  .grid-block.collapse.medium-10.large-10.vertical
+    #header.shrink.collapse.grid-content
+      %ul.menu-bar.topmenu
+        %li.hide-for-medium
+          %a{:href => "#", "zf-open" => "sidebar"} Menu
+        %li
+          %a{:href => "#"}
+        %li.topmenu__alerts
+          %span
+            Notification
+        %li.topmenu__profile
+          Colin K Kuhuni
+          %img{"data-direction" => "bottom", :icon => "chevron", :size => "medium", "zf-iconic" => ""}/
+          %img{:icon => "chevron", "icon-attrs" => "{ direction: 'bottom' }", :size => "medium", "zf-iconic" => ""}/
+
+    .grid-block
+      .grid-block.small-12.medium-9.vertical
+        .grid-content
+          %h4 Main Content Box
+      .grid-content.medium-3.show-for-medium.message-side-bar
+        %section.block-list
+          %header In This Room
+          %ul
+            %li
+              %a{:href => "#"} Cady Heron
+            %li
+              %a{:href => "#"} Kevin Gnapoor
+            %li
+              %a{:href => "#"} Trang Pak
+            %li
+              %a{:href => "#"} Coach Carr
+            %li
+              %a{:href => "#"} Regina George

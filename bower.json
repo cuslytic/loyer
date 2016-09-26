@@ -1,0 +1,10 @@
+{
+  "name": "foundation_six_middleman",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "foundation-sites": "~6.2.3",
+    "modernizr": "~2.8.3",
+    "foundation-apps": "^1.2.0"
+  }
+}
